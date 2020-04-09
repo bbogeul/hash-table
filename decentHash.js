@@ -12,6 +12,7 @@ function hashStringToInt(s, tableSize) {
     table = new Array(3333);
     numItems = 0;
   
+    // rehashing
     resize = () => {
       const newTable = new Array(this.table.length * 2);
       this.table.forEach(item => {
